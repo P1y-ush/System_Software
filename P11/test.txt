@@ -1,0 +1,4 @@
+Hello, I am fd
+Hello, I am dup
+Hello, I am dup2
+Hello, I am fcntl

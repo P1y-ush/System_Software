@@ -1,0 +1,38 @@
+# Compile both programs
+piyush@piyush-Lenovo-ideapad-330S-15IKB-D:~/Desktop/SS/P17$ cc init_ticket.c
+piyush@piyush-Lenovo-ideapad-330S-15IKB-D:~/Desktop/SS/P17$ cc book_ticket.c -o book
+
+# Initialize ticket file:
+piyush@piyush-Lenovo-ideapad-330S-15IKB-D:~/Desktop/SS/P17$ ./init
+Ticket file initialized with ticket number 0
+
+# Can book single or multiple tickets at a time
+
+//Single Ticket
+piyush@piyush-Lenovo-ideapad-330S-15IKB-D:~/Desktop/SS/P17$ ./book
+Process 11685: Waiting for lock...
+Process 11685: Lock acquired.
+Process 11685: Reserved ticket number 3
+Process 11685: Lock released.
+
+// Multiple Tickets
+
+piyush@piyush-Lenovo-ideapad-330S-15IKB-D:~/Desktop/SS/P17$ ./book
+./book
+./book
+Process 11782: Waiting for lock...
+Process 11782: Lock acquired.
+Process 11782: Reserved ticket number 6
+Process 11782: Lock released.
+Process 11784: Waiting for lock...
+Process 11784: Lock acquired.
+Process 11784: Reserved ticket number 7
+Process 11784: Lock released.
+Process 11785: Waiting for lock...
+Process 11785: Lock acquired.
+Process 11785: Reserved ticket number 8
+Process 11785: Lock released.
+
+
+
+
